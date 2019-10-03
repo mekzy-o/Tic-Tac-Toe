@@ -13,29 +13,30 @@
   left: 0;
   bottom: 0;
   right: 0;
+}
 
-  .pane {
-    height: 100px;
-    width: 100px;
-    border: 2px solid black;
-    cursor: pointer;
+.pane {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  cursor: pointer;
+}
 
-    &.x::after, &.o::after {
-      font-size: 4.5rem;
-      position: relative;
-      left: 25px;
-      top: 10px;
-    }
+.x::after,
+.o::after {
+  font-size: 4.5rem;
+  position: relative;
+  left: 25px;
+  top: 10px;
+}
 
-    &.x::after {
-      content: 'X';
-      color: green;
-    }
+.x::after {
+  content: "X";
+  color: green;
+}
 
-    &.o::after {
-      content: 'O';
-      left: 22px;
-      color: red;
-    }
-  }
+.o::after {
+  content: "O";
+  left: 22px;
+  color: red;
 }
